@@ -9,4 +9,13 @@ public class Hero {
         this.age = age;
         this.power = power;
     }
+    String getName(){
+        return this.name;
+    }
+    int getAge(){
+        return this.age;
+    }
+    String getPower(){
+        return this.power;
+    }
 }
