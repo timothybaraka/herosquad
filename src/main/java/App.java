@@ -6,6 +6,7 @@ import java.util.Map;
 
 import static spark.Spark.get;
 import static spark.Spark.staticFileLocation;
+import static spark.route.HttpMethod.post;
 
 public class App {
 
@@ -39,6 +40,11 @@ public class App {
             model.put("name", name);
             model.put("age", age);
             model.put("power", power);
+
+            String hero = request.queryParams("hero");
+            String group = request.queryParams("group");
+            model.put("hero", hero);
+            model.put("group", group);
             return new ModelAndView(model, "herosquad.hbs");
         }, new HandlebarsTemplateEngine());
     }
