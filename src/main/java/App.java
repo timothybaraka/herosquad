@@ -30,6 +30,17 @@ public class App {
             model.put("sender",sender);
             return new ModelAndView(model, "squad.hbs");
         }, new HandlebarsTemplateEngine());
+
+        get("/herosquad", (request,response)-> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            String name = request.queryParams("name");
+            String age = request.queryParams("age");
+            String power = request.queryParams("power");
+            model.put("name", name);
+            model.put("age", age);
+            model.put("power", power);
+            return new ModelAndView(model, "herosquad.hbs");
+        }, new HandlebarsTemplateEngine());
     }
 
 }
