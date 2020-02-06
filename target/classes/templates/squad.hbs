@@ -1,0 +1,24 @@
+
+
+{{#partial "content"}}
+
+    <H3>Create your squad here</H3>
+
+    <form action="/herosquad">
+
+        <div>
+            <label for="name">Hero Name</label>
+            <input id ="name" name="hero" class="form-control" type="text" value="{{name}}">
+        </div>
+        <div>
+            <label for="group">Hero Group</label>
+            <input id ="group" class="form-control" name="group" type="text">
+        </div>
+
+
+        <div><button type="submit" >Ready for battle</button></div>
+
+    </form>
+{{/partial}}
+
+{{>layout.hbs}}

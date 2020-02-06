@@ -1,0 +1,33 @@
+
+
+{{#partial "content"}}
+
+    <form action="/herosquad">
+
+        <h3>Input your HERO`S DETAILS</h3>
+        <div class="form-group">
+            <label for="name" >Hero Name</label>
+            <input id ="name" name="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="age">Hero Age</label>
+            <input id ="age" name="age"  class="form-control" type="numbers">
+        </div>
+        <div class="form-group">
+            <label for="power">Hero Power</label>
+            <input id ="power" name="power" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="power">Hero Weakness</label>
+            <input id ="power" name="weakness" class="form-control" type="text">
+        </div>
+
+        <div><button type="submit">Submit Hero</button></div>
+
+    </form>
+
+
+
+{{/partial}}
+
+{{>layout.hbs}}
