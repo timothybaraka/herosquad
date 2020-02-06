@@ -37,9 +37,11 @@ public class App {
             String name = request.queryParams("name");
             String age = request.queryParams("age");
             String power = request.queryParams("power");
+            String weakness = request.queryParams("weakness");
             model.put("name", name);
             model.put("age", age);
             model.put("power", power);
+            model.put("weakness", weakness);
 
             String hero = request.queryParams("hero");
             String group = request.queryParams("group");
